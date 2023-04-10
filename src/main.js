@@ -20,10 +20,10 @@ redis_client.on('connect', () => console.log('Connection to redis succeeded ya 3
 redis_client.connect();
 
 //Postgres database connect
-const postgres_client = new Client({connectionString: "postgresql://root:example@postgres:5432",});
-postgres_client.connect()
-        .then(()=> console.log("Connection to postgres database succeeded ya 3m Adel"))
-        .catch((err)=> console.log("Connection to postgres database failed ya 3m Adel with error: ",err))
+// const postgres_client = new Client({connectionString: "postgresql://root:example@postgres:5432",});
+// postgres_client.connect()
+//         .then(()=> console.log("Connection to postgres database succeeded ya 3m Adel"))
+//         .catch((err)=> console.log("Connection to postgres database failed ya 3m Adel with error: ",err))
 
 //Nodejs Application Logic
 adelappserver.get("/", (req,res)=>{
