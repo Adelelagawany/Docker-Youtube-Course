@@ -1,0 +1,14 @@
+version: "3"
+services:
+  adelappserver:
+    container_name: adelappserver-container
+    build:
+      context: .
+      target: Dev
+    ports:
+      - "4000:4000"
+    volumes: 
+      - ./src:/adelappfolder/src:ro
+    environment:
+      - PORT=4000
+      - ENV-TYPE= development
