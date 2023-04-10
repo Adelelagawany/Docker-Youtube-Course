@@ -5,7 +5,7 @@ services:
     depends_on:
       - mongo
       - redis
-      - postgres
+#     - postgres
   
   mongo:
     image: mongo
