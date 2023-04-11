@@ -33,5 +33,5 @@ adelappserver.get("/", (req,res)=>{
 
 adelappserver.get("/productsdata", async(req,res)=>{  
         const prods = await redis_client.get("Products"); 
-        res.send(`<h1>>Hello World From AWS !</h1> <h2>${prods}</h2>`); 
+        res.send(`<h1>Hello World From AWS !</h1> <h2>${prods}</h2>`); 
 });
