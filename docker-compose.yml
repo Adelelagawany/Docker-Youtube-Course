@@ -2,7 +2,7 @@ version: "3"
 services:
   adel-nodejs-app:
     container_name: adel-nodejs-app-container
-    image: adelelagawany/docker-youtube-course-images
+    image: adelelagawany/adel-nodejs-app-image:latest
     depends_on:
       - mongo
       - redis
