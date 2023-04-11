@@ -28,10 +28,10 @@ redis_client.connect();
 //Nodejs Application Logic
 adelappserver.get("/", (req,res)=>{
         redis_client.set("Products", "product 1")
-        res.send("<h1>Hello World From AWS ! </h1>")    
+        res.send("<h1>Hello World From AWS-Docker Hub ! </h1>")    
 });
 
 adelappserver.get("/productsdata", async(req,res)=>{  
         const prods = await redis_client.get("Products"); 
-        res.send(`<h1>Hello World From AWS !</h1> <h2>${prods}</h2>`); 
+        res.send(`<h1>Hello World From AWS-Docker Hub !</h1> <h2>${prods}</h2>`); 
 });

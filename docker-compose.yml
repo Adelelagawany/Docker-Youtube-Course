@@ -2,6 +2,7 @@ version: "3"
 services:
   adelappserver:
     container_name: adelappserver-container
+    image: adelelagawany/docker-youtube-course-images
     depends_on:
       - mongo
       - redis
