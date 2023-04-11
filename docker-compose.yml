@@ -1,7 +1,7 @@
 version: "3"
 services:
-  adelappserver:
-    container_name: adelappserver-container
+  adel-nodejs-app:
+    container_name: adel-nodejs-app-container
     image: adelelagawany/docker-youtube-course-images
     depends_on:
       - mongo
@@ -39,7 +39,7 @@ services:
     ports:
      - "80:80"
     depends_on:
-      - adelappserver
+      - adel-nodejs-app
 
   # postgres:  
   #   image: postgres

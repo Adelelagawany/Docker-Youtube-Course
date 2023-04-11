@@ -1,7 +1,7 @@
 version: "3"
 services:
-  adelappserver:
-    container_name: adelappserver-container
+  adel-nodejs-app:
+    container_name: adel-nodejs-app-container
     build:
       context: .
       target: Prod
